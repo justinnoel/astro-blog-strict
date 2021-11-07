@@ -1,0 +1,55 @@
+diff --git a/src/components/BaseHead.astro b/src/components/BaseHead.astro
+index a5e199a..8c404b3 100644
+--- a/src/components/BaseHead.astro
++++ b/src/components/BaseHead.astro
+@@ -8,7 +8,7 @@ const { title, description, permalink } = Astro.props;
+ ---
+ 
+ <!-- Global Metadata -->
+-<meta charset="utf-8" />
++<meta charSet="utf-8" />
+ <meta name="viewport" content="width=device-width" />
+ <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+ 
+diff --git a/src/components/BlogPost.astro b/src/components/BlogPost.astro
+index 9f7ac9e..fe9b390 100644
+--- a/src/components/BlogPost.astro
++++ b/src/components/BlogPost.astro
+@@ -1,4 +1,5 @@
+ ---
++import { ComponentChildren } from "preact";
+ import Author from './Author.astro';
+ 
+ export interface Props {
+@@ -7,6 +8,7 @@ export interface Props {
+   publishDate: string;
+   heroImage: string;
+   alt: string;
++  children: ComponentChildren;
+ }
+ 
+ const { title, author, publishDate, heroImage, alt } = Astro.props;
+diff --git a/src/ts-start.ts b/src/ts-start.ts
+new file mode 100644
+index 0000000..5db0421
+--- /dev/null
++++ b/src/ts-start.ts
+@@ -0,0 +1,2 @@
++// See the README for an explanation of why this file exists.
++const astro = "🚀";
+diff --git a/tsconfig.json b/tsconfig.json
+index 44465b1..64f6fec 100644
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -1,3 +1,10 @@
+ {
+-  "moduleResolution": "node"
++   "moduleResolution": "node",
++   "compilerOptions": {
++      "alwaysStrict": true,
++      "jsx": "react-jsx",
++      "jsxImportSource": "preact",
++      "moduleResolution": "node",
++      "strict": true
++   }
+ }
