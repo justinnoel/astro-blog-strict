@@ -1,3 +1,10 @@
 {
-  "moduleResolution": "node"
+   "moduleResolution": "node",
+   "compilerOptions": {
+      "alwaysStrict": true,
+      "jsx": "react-jsx",
+      "jsxImportSource": "preact",
+      "moduleResolution": "node",
+      "strict": true
+   }
 }
