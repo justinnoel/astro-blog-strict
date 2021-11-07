@@ -1,4 +1,5 @@
 ---
+import { ComponentChildren } from "preact";
 import Author from './Author.astro';
 
 export interface Props {
@@ -7,6 +8,7 @@ export interface Props {
   publishDate: string;
   heroImage: string;
   alt: string;
+  children: ComponentChildren;
 }
 
 const { title, author, publishDate, heroImage, alt } = Astro.props;
