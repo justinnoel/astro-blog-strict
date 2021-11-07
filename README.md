@@ -29,7 +29,7 @@ the `.astro` file to be revalidated by doing the following:
 
 ## Different Implementations
 
-## TypeScript Strict Configuration
+### TypeScript Strict Configuration
 
 This version just adds additional settings and modifications to ensure TypeScript
 works properly with a `strict: true` configuration.
