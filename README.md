@@ -44,4 +44,6 @@ curl https://raw.githubusercontent.com/justinnoel/astro-blog-strict/main/patches
 
 **NOTE**: The `README.md` file is excluded to prevent incorporating its changes.
 
-Alternatively, the [differences can be view here](https://github.com/justinnoel/astro-blog-strict/pull/1/files?diff=split&w=1).
+Alternatively, the differences can be viewed
+[in the PR](https://github.com/justinnoel/astro-blog-strict/pull/1/files?diff=split&w=1)
+or [in the patch file](https://github.com/justinnoel/astro-blog-strict/blob/main/patches/01-typescript-strict-configuration.patch)
