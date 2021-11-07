@@ -43,3 +43,5 @@ curl https://raw.githubusercontent.com/justinnoel/astro-blog-strict/main/patches
 ```
 
 **NOTE**: The `README.md` file is excluded to prevent incorporating its changes.
+
+Alternatively, the [differences can be view here](https://github.com/justinnoel/astro-blog-strict/pull/1/files?diff=split&w=1).
